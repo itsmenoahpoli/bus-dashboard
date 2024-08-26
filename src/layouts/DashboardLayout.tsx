@@ -89,7 +89,7 @@ export const DashboardLayout: React.FC = () => {
       <div className="w-[300px] h-screen bg-slate-900 border-r-2 border-gray-100 fixed top-0 left-0">
         <div className="py-5">
           <div className="w-full h-auth flex justify-center items-center">
-            <h1 className="text-xl text-white font-medium">CUL Bus Transport</h1>
+            <h1 className="text-xl text-white font-medium">PBAR</h1>
             {/* <img src={BRAND_LOGO} className="h-auto w-[160px]" alt="cul-transport-logo.png" /> */}
           </div>
 

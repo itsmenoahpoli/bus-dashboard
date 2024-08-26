@@ -1,13 +1,8 @@
 import axios, { AxiosInstance, AxiosResponse, AxiosError, InternalAxiosRequestConfig } from "axios";
 
-const baseURLS = {
-  prod: "https://cul-transport-server-production.up.railway.app/api/v1",
-  local: "http://localhost:3000/api/v1",
-};
-
 const instance: AxiosInstance = axios.create({
   // @ts-ignore
-  baseURL: baseURLS[import.meta.env.VITE_APP_NODE_ENV],
+  baseURL: "http://localhost:3000/api/v1",
 });
 
 instance.interceptors.request.use(
