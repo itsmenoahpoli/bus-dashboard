@@ -9,7 +9,7 @@ export const LoginForm: React.FC = () => {
 
   const { register, handleSubmit } = useForm({
     defaultValues: {
-      email: "admin@cultransport.com",
+      email: "admin@pbarapp.com",
       password: "password",
     },
   });
@@ -22,12 +22,12 @@ export const LoginForm: React.FC = () => {
 
   return (
     <form className="flex flex-col gap-4 text-[14px]" onSubmit={handleLogin}>
-      <input type="text" placeholder="E-mail" {...register("email")} required />
-      <input type="password" placeholder="Password" {...register("password")} required />
+      <input type="text" className="!h-[40px]" placeholder="E-mail" {...register("email")} required />
+      <input type="password" className="!h-[40px]" placeholder="Password" {...register("password")} required />
       <Link to="/auth/forgot-password" className="text-sm text-right text-blue-700 underline">
         Reset Password
       </Link>
-      <button type="submit" className="h-[50px] w-full  text-white bg-red-800 hover:bg-red-700 disabled:bg-red-200  rounded mt-2" disabled={loading}>
+      <button type="submit" className="!h-[40px] w-full  text-white bg-red-800 hover:bg-red-700 disabled:bg-red-200  rounded mt-2" disabled={loading}>
         {loading ? "..." : "LOG IN"}
       </button>
     </form>
